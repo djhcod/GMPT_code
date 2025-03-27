@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StartUp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SurvivalCutoff>20</SurvivalCutoff>
+  <NoOfRandomizations>100</NoOfRandomizations>
+  <XtileApplicationPath>C:\Program Files (x86)\X-tile\</XtileApplicationPath>
+  <XtileProjectPath>\\vmware-host\Shared Folders\下载\X-tile sarcoma\</XtileProjectPath>
+  <XtileProjectName>sarcoma.xpf</XtileProjectName>
+  <XtileSetupFileName>sarcoma.set</XtileSetupFileName>
+  <PreferredSurvivalXtileType>Chi2HL</PreferredSurvivalXtileType>
+  <PreferredMeansTestXtileType>FTestHL</PreferredMeansTestXtileType>
+  <Alpha>0.05</Alpha>
+  <MinEvents>5</MinEvents>
+  <MinPopSize>1</MinPopSize>
+  <MinPopPct>10</MinPopPct>
+  <MinMiddlePopPct>20</MinMiddlePopPct>
+  <Min>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+    <float>0</float>
+  </Min>
+  <Max>
+    <float>0.05</float>
+    <float>0.05</float>
+    <float>0.05</float>
+    <float>0</float>
+    <float>10</float>
+    <float>10</float>
+    <float>10</float>
+    <float>10</float>
+    <float>1</float>
+    <float>0</float>
+    <float>0</float>
+  </Max>
+  <TrainValidation />
+  <AllowXtileCreateTrainValid>false</AllowXtileCreateTrainValid>
+  <ValidationSetRatio>1</ValidationSetRatio>
+  <TrainingSetRatio>1</TrainingSetRatio>
+  <Survival>time</Survival>
+  <Censor>dead</Censor>
+  <Marker1>age</Marker1>
+  <Marker2 />
+  <TimeInputType>Months</TimeInputType>
+  <TimeOutputType>Years</TimeOutputType>
+  <CensorType>AliveDead</CensorType>
+  <HistogramBars>30</HistogramBars>
+  <MaxClusterAlphaFold>0</MaxClusterAlphaFold>
+  <MinClusterAvgAlphaFold>0</MinClusterAvgAlphaFold>
+  <MinRequiredClusterings>0</MinRequiredClusterings>
+  <SavedSelectedIndex>0</SavedSelectedIndex>
+  <SavedSortColumn>0</SavedSortColumn>
+  <SavedSortDown>false</SavedSortDown>
+  <SavedWidth>0</SavedWidth>
+  <SavedHeight>0</SavedHeight>
+  <PopulationSet>All</PopulationSet>
+  <Metafile>EmfOnly</Metafile>
+  <ShowValidOnly>false</ShowValidOnly>
+  <CrossValidation>false</CrossValidation>
+  <CorrectedPValue>false</CorrectedPValue>
+  <CutpointConsistency>false</CutpointConsistency>
+  <ShowUncorrectedPvalue>false</ShowUncorrectedPvalue>
+  <Limits>false</Limits>
+  <LimitsHigh>0</LimitsHigh>
+  <LimitsLow>0</LimitsLow>
+</StartUp>

@@ -1,0 +1,57 @@
+R version 4.4.1 (2024-06-14)
+Platform: aarch64-apple-darwin20
+Running under: macOS Sonoma 14.6.1
+
+Matrix products: default
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.0
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: Asia/Shanghai
+tzcode source: internal
+
+attached base packages:
+[1] grid      stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] RColorBrewer_1.1-3   ggh4x_0.2.8          ggunchull_1.0.1      patchwork_1.2.0     
+ [5] beepr_2.0            ggrepel_0.9.5        gridGraphics_0.5-1   scatterplot3d_0.3-44
+ [9] clustree_0.5.1       ggraph_2.2.1         cowplot_1.1.3        lubridate_1.9.3     
+[13] forcats_1.0.0        stringr_1.5.1        dplyr_1.1.4          purrr_1.0.2         
+[17] readr_2.1.5          tidyr_1.3.1          tibble_3.2.1         ggplot2_3.5.1       
+[21] tidyverse_2.0.0      Seurat_5.1.0         SeuratObject_5.0.2   sp_2.1-4            
+[25] qs_0.26.3           
+
+loaded via a namespace (and not attached):
+  [1] audio_0.1-11           rstudioapi_0.16.0      jsonlite_1.8.8         magrittr_2.0.3        
+  [5] spatstat.utils_3.0-5   farver_2.1.2           vctrs_0.6.5            ROCR_1.0-11           
+  [9] memoise_2.0.1          spatstat.explore_3.3-1 htmltools_0.5.8.1      rsthemes_0.4.0        
+ [13] sctransform_0.4.1      parallelly_1.38.0      KernSmooth_2.23-24     htmlwidgets_1.6.4     
+ [17] ica_1.0-3              plyr_1.8.9             cachem_1.1.0           plotly_4.10.4         
+ [21] zoo_1.8-12             igraph_2.0.3           mime_0.12              lifecycle_1.0.4       
+ [25] pkgconfig_2.0.3        Matrix_1.7-0           R6_2.5.1               fastmap_1.2.0         
+ [29] fitdistrplus_1.2-1     future_1.34.0          shiny_1.9.1            digest_0.6.36         
+ [33] colorspace_2.1-1       tensor_1.5             RSpectra_0.16-2        irlba_2.3.5.1         
+ [37] progressr_0.14.0       fansi_1.0.6            spatstat.sparse_3.1-0  timechange_0.3.0      
+ [41] httr_1.4.7             polyclip_1.10-7        abind_1.4-5            compiler_4.4.1        
+ [45] splancs_2.01-45        withr_3.0.1            viridis_0.6.5          fastDummies_1.7.3     
+ [49] R.utils_2.12.3         ggforce_0.4.2          MASS_7.3-61            tools_4.4.1           
+ [53] lmtest_0.9-40          httpuv_1.6.15          future.apply_1.11.2    goftest_1.2-3         
+ [57] R.oo_1.26.0            glue_1.7.0             dbscan_1.2-0           nlme_3.1-165          
+ [61] promises_1.3.0         Rtsne_0.17             cluster_2.1.6          reshape2_1.4.4        
+ [65] generics_0.1.3         gtable_0.3.5           spatstat.data_3.1-2    tzdb_0.4.0            
+ [69] R.methodsS3_1.8.2      data.table_1.15.4      RApiSerialize_0.1.3    hms_1.1.3             
+ [73] tidygraph_1.3.1        stringfish_0.16.0      utf8_1.2.4             spatstat.geom_3.3-2   
+ [77] RcppAnnoy_0.0.22       RANN_2.6.1             pillar_1.9.0           spam_2.10-0           
+ [81] RcppHNSW_0.6.0         later_1.3.2            splines_4.4.1          tweenr_2.0.3          
+ [85] lattice_0.22-6         survival_3.7-0         deldir_2.0-4           tidyselect_1.2.1      
+ [89] miniUI_0.1.1.1         pbapply_1.7-2          gridExtra_2.3          scattermore_1.2       
+ [93] graphlayouts_1.1.1     matrixStats_1.3.0      stringi_1.8.4          lazyeval_0.2.2        
+ [97] codetools_0.2-20       interp_1.1-6           sgeostat_1.0-27        cli_3.6.3             
+[101] alphahull_2.5          uwot_0.2.2             RcppParallel_5.1.8     xtable_1.8-4          
+[105] reticulate_1.38.0      munsell_0.5.1          Rcpp_1.0.13            globals_0.16.3        
+[109] spatstat.random_3.3-1  png_0.1-8              spatstat.univar_3.0-0  parallel_4.4.1        
+[113] dotCall64_1.1-1        listenv_0.9.1          viridisLite_0.4.2      scales_1.3.0          
+[117] ggridges_0.5.6         leiden_0.4.3.1         rlang_1.1.4           

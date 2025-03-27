@@ -2,10 +2,6 @@
 .Rhistory
 .Rapp.history
 
-# Session Data files
-.RData
-.RDataTmp
-
 # User-specific files
 .Ruserdata
 
@@ -21,10 +17,6 @@
 # RStudio files
 .Rproj.user/
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
 
@@ -39,11 +31,14 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
-# RStudio Connect folder
-rsconnect/
+
+
+.DS_Store
+/macrophage_oc/data/
+/macrophage_oc/output/
+/sarcoma_peri/data/
+/sarcoma_rad/SEER原始数据/
+备用
