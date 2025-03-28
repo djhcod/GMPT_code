@@ -38,10 +38,8 @@ summary(tcga_filt$gene_score)
 
 set.seed(1)
 
-# 创建训练集和验证集的索引
-train_indices <- sample(seq_len(nrow(tcga_filt)), size = 0.7 * nrow(tcga_filt))
 
-# 根据索引分割数据集
+train_indices <- sample(seq_len(nrow(tcga_filt)), size = 0.7 * nrow(tcga_filt))
 tcga_filt$split <- "test"
 tcga_filt$split[train_indices] <- "train"
 
