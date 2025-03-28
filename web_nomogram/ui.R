@@ -20,40 +20,119 @@ ui <- page_navbar(
       style = "text-align: center;"
     ),
     title = "Intro",
-    fluidRow(layout_column_wrap(
-      card(
-        card_header("About this website", style = "font-size: 40px; font-weight: bold"),
-        p(
-          strong(
-            "Gynecologic Malignancies Prediction Toolkit (GMPT)",
-            style = "color: rgb(230, 154, 156)"
+    fluidRow(
+      layout_column_wrap(
+        card(
+          card_header("About this website", style = "font-size: 40px; font-weight: bold"),
+          p(
+            strong(
+              "Gynecologic Malignancies Prediction Toolkit (GMPT)",
+              style = "color: rgb(230, 154, 156)"
+            ),
+            "is a one-stop web application that provides malignancy risk assessment,
+        prognosis prediction, and treatment decision-making for gynecologic malignancies.
+        The current GMPT encompasses the uterine sarcoma prognostic prediction model,
+          the uterine sarcoma adjuvant radiotherapy decision tool,
+          as well as the inflammatory marker-based ovarian tumor malignancy risk
+          assessment tool and the ovarian cancer prognostic prediction model
+          based on the CCL3L1+ Inflam-TAMs-related prognostic gene signature (MRPGS)."
           ),
-          "is a one-stop web application that provides malignancy risk assessment,
-        prognosis prediction, and treatment decision-making for gynecologic malignancies."
-        ),
-        p("In our study, based on large-scale population data,
-          clinical case analysis and single-cell sequencing, we explored the
-          effects of peritoneal cytology, adjuvant radiotherapy and markers
-          of inflammatory response on the prognosis of uterine sarcoma and
-          ovarian cancer in a multidimensional manner, and constructed a
-          series of efficient predictive models. The independent prognostic
-          value of malignant peritoneal cytology for uterine sarcoma was
-          revealed, and a risk stratification system that can guide radiotherapy
-          decisions was developed. A column-line graph model based on
-          inflammatory markers and an integrated prognostic model based
-          on CCL3L1+ Inflam-TAMs-related genes provided new options for
-          malignant risk assessment and prognostic prediction of ovarian
-          cancer. Finally, the GMPT web application that integrates all models
-          achieves clinical translation, and its open-source methodology provides
-          a standardized tool for individualized treatment strategy development
-          and prognostic assessment.")
+          p(
+            "The development of GMPT was based on large-scale population data,
+          clinical case analysis, and single-cell sequencing. We investigated
+          the impact of peritoneal cytology, adjuvant radiotherapy, and inflammatory
+          response markers on the prognosis of uterine sarcomas and ovarian cancers
+          in a multidimensional manner and constructed a series of highly efficient
+          predictive models. We revealed the independent prognostic value of
+          malignant peritoneal cytology for uterine sarcoma and developed a
+          risk stratification system that can guide radiotherapy decisions.
+          The inflammatory marker-based column-line diagram model and the
+          CCL3L1+ Inflam-TAMs-related gene-based integrated prognostic model
+          provided new options for malignant risk assessment and prognostic
+          prediction of ovarian cancer. Finally, the GMPT web application that
+          integrates all models achieves clinical translation, and its
+          open-source methodology provides a standardized tool for
+          individualized treatment strategy development and prognostic
+          assessment."
+          ),
+          p(
+            "The GMPT web application will be maintained long-term. In the future,
+          we will continue enhancing the GMPT website to include a broader range
+          of gynecologic malignancies and predictive tools, aiming to provide a
+          comprehensive, one-stop prediction platform."
+          )
+        )
       )
-    )),
+    ),
     fluidRow(
       column(3, img(src = "tree.png", style = "width: 100%; padding: 10px;")),
       column(3, img(src = "lasso.png", style = "width: 100%; padding: 10px;")),
       column(3, img(src = "rsf.png", style = "width: 100%; padding: 10px;")),
       column(3, img(src = "sc.png", style = "width: 100%; padding: 10px;"))
+    ),
+    fluidRow(
+      layout_column_wrap(
+        card(
+          card_header("Links", style = "font-size: 30px; font-weight: bold"),
+          p(
+            icon("github", class = "fa-brands fa-github", lib = "font-awesome", style = "color: rgb(230, 154, 156)"),
+            strong("Source code:  ", style = "color: rgb(230, 154, 156)"),
+            a(
+              "https://github.com/djhcod/GMPT_code",
+              href = "https://github.com/djhcod/GMPT_code",
+              target = "_blank",
+            ),
+          ),
+          p(
+            icon("app-store", class = "fa-brands fa-app-store", lib = "font-awesome", style = "color: rgb(230, 154, 156)"),
+            strong("GMPT desktop application:  ", style = "color: rgb(230, 154, 156)"),
+            a(
+              "https://github.com/djhcod/GMPT_code/releases",
+              href = "https://github.com/djhcod/GMPT_code/releases",
+              target = "_blank",
+            ),
+          ),
+          p(
+            icon("laptop-code", class = "fa-solid fa-laptop-code", lib = "font-awesome", style = "color: rgb(230, 154, 156)"),
+            strong("Local deployment of GMPT:  ", style = "color: rgb(230, 154, 156)"),
+            a(
+              "https://github.com/djhcod/GMPT_code/tree/main/web_nomogram",
+              href = "https://github.com/djhcod/GMPT_code/tree/main/web_nomogram",
+              target = "_blank",
+            ),
+            "(run through RStudio after downloading all files completely)"
+          )
+        )
+      )
+    ),
+    fluidRow(
+      layout_column_wrap(
+        card(
+          card_header("SCI publications to date for this project:", style = "font-size: 20px; font-weight: bold"),
+          p(
+            "Du J, Hu D, Xing Y, et al. Correlation between malignant peritoneal cytology
+            and survival in patients with uterine leiomyosarcoma and endometrial
+            stromal sarcoma[J]. International Journal of Gynecologic Cancer,
+            2024, 34(1): 58-65. DOI: ",
+            a(
+              "10.1136/ijgc-2023-004792.",
+              href = "https://doi.org/10.1136/ijgc-2023-004792",
+              target = "_blank",
+            )
+          ),
+          p(
+            "Du J, Cheng Y, Hu D, et al. A nomogram-based overall survival
+            stratification to identify uterine sarcoma patients without
+            distant metastases who may benefit from adjuvant radiotherapy[J].
+            Gynecologic Oncology, 2023, 169: 17-26. DOI: ",
+            a(
+              "10.1016/j.ygyno.2022.11.023.",
+              href = "https://doi.org/10.1016/j.ygyno.2022.11.023",
+              target = "_blank",
+            )
+          )
+        )
+      )
     ),
     p("Du Junhong Copyright 2025",
       style = "text-align: center"
@@ -76,14 +155,16 @@ ui <- page_navbar(
       "-based overall survival prediction model for patients with uterine sarcoma",
       br(),
       a(
-        href = "https://github.com/rstudio/shiny",
+        href = "https://github.com/djhcod/GMPT_code/tree/main/sarcoma_peri",
         icon("github"),
-        style = "color: black"
+        style = "color: black",
+        target = "_blank"
       ),
       a(
         href = "http://dx.doi.org/10.1136/ijgc-2023-004792",
         icon("paperclip"),
-        style = "color: black"
+        style = "color: black",
+        target = "_blank"
       )
     ),
     fluidRow(
@@ -268,8 +349,18 @@ ui <- page_navbar(
        patients without distant metastases",
       strong("who may benefit from adjuvant radiotherapy"),
       br(),
-      a(href = "https://github.com/rstudio/shiny", icon("github"), style = "color: black"),
-      a(href = "http://dx.doi.org/10.1136/ijgc-2023-004792", icon("paperclip"), style = "color: black"),
+      a(
+        href = "https://github.com/djhcod/GMPT_code/tree/main/sarcoma_rad",
+        icon("github"),
+        style = "color: black",
+        target = "_blank"
+        ),
+      a(
+        href = "https://doi.org/10.1016/j.ygyno.2022.11.023",
+        icon("paperclip"),
+        style = "color: black",
+        target = "_blank"
+        ),
       style = "color: black;
               text-align: left;
               background-image: url('banner_rad.jpeg');
@@ -294,7 +385,7 @@ ui <- page_navbar(
             "According to our ",
             a(
               "published research",
-              href = "http://dx.doi.org/10.1136/ijgc-2023-004792",
+              href = "https://doi.org/10.1016/j.ygyno.2022.11.023",
               target = "_blank",
             ),
             "for patients in the high-risk group, adjuvant radiotherapy significantly
@@ -514,14 +605,10 @@ ui <- page_navbar(
       "-based Nomogram to Estimate the Malignant Probability in Patients with Ovarian Masses",
       br(),
       a(
-        href = "https://github.com/rstudio/shiny",
+        href = "https://github.com/djhcod/GMPT_code/tree/main/inflammatory_markers",
         icon("github"),
-        style = "color: black"
-      ),
-      a(
-        href = "http://dx.doi.org/10.1136/ijgc-2023-004792",
-        icon("paperclip"),
-        style = "color: black"
+        style = "color: black",
+        target = "_blank"
       )
     ),
     fluidRow(
@@ -529,21 +616,18 @@ ui <- page_navbar(
         card(
           card_header("Introduction", style = "font-size: 28px; font-weight: bold"),
           p(
-            "Our ",
-            a(
-              "previous study",
-              href = "http://dx.doi.org/10.1136/ijgc-2023-004792",
-              target = "_blank",
-            ),
-            " found that fibrinogen (FIB) and monocyte-to-lymphocyte ratio (MLR)
-            significantly improved the model’s discrimination ability.
-            The nomogram based on the final model outperformed some well-known
-            ovarian cancer prediction tools (RMI, LR2, ROMA, CPH-I, and R-OPS)
-            and exhibited an excellent performance in detecting early-stage
-            ovarian cancer with an AUC value of 0.946 (95% CI: 0.925-0.967).
-            The systemic inflammatory response markers and ultrasound-based
-            nomogram provided a convenient and accurate tool for estimating
-            the malignant probability in women with ovarian masses."
+            "The model study included 1087 patients who underwent surgical treatment
+            for ovarian tumors. Firstly, systemic inflammatory response markers
+            that can effectively differentiate between benign and malignant ovarian
+            masses were identified based on LASSO-logistic regression.
+            Three levels of models were established based on different variables (Models 1-3).
+            The inclusion of two inflammatory indicators in Model 3, namely fibrinogen (FIB)
+            and monocyte-to-lymphocyte ratio (MLR), was demonstrated to significantly improve
+            the accuracy of the model in differentiating between benign and malignant ovarian
+            masses by calculating ΔAUC, NRI and IDI. Finally, a column-line graph prediction
+            model was constructed based on Model 3 and demonstrated to have higher accuracy
+            in predicting ovarian malignancy and identifying early ovarian cancer compared
+            with RMI, LR2, ROMA, CPH-I and R-OPS models."
           )
         )
       )
@@ -738,14 +822,10 @@ ui <- page_navbar(
       model for ovarian cancer.",
       br(),
       a(
-        href = "https://github.com/rstudio/shiny",
+        href = "https://github.com/djhcod/GMPT_code/tree/main/macrophage_oc",
         icon("github"),
-        style = "color: black"
-      ),
-      a(
-        href = "http://dx.doi.org/10.1136/ijgc-2023-004792",
-        icon("paperclip"),
-        style = "color: black"
+        style = "color: black",
+        target = "_blank"
       )
     ),
     fluidRow(
@@ -999,5 +1079,12 @@ ui <- page_navbar(
       )
     ),
     p("Du Junhong Copyright. 2025", style = "text-align: center")
+  ),
+  nav_spacer(),
+  nav_menu(
+    title = "Links",
+    align = "right",
+    nav_item(tags$a("GitHub repository", href = "https://github.com/djhcod/GMPT_code", target = "_blank")),
+    nav_item(tags$a("Desktop application", href = "https://github.com/djhcod/GMPT_code/releases", target = "_blank"))
   )
 )

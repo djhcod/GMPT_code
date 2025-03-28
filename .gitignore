@@ -37,6 +37,7 @@ po/*~
 
 
 .DS_Store
+.dmg
 /macrophage_oc/data/
 /macrophage_oc/output/
 /sarcoma_peri/data/
